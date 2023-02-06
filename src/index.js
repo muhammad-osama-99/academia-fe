@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Routing from "./routing";
 import reportWebVitals from './reportWebVitals';
-
+import { ProSidebarProvider } from 'react-pro-sidebar';
+const routes = Routing();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ProSidebarProvider>
+   {routes}
+    </ProSidebarProvider>
   </React.StrictMode>
 );
 

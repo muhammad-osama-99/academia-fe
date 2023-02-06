@@ -1,0 +1,17 @@
+.id-column--cell{
+
+    height: 56px;
+    width: 100px !important;
+    min-width: 40px !important;
+    max-width: 100px !important;
+}
+.name-column--cell{
+    max-width: 250px;
+    width: 250px;
+}
+.email-column--cell{
+    max-width: 250px;
+}
+.access-column--cell{
+    max-width: 250px;
+}

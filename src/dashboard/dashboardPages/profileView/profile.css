@@ -1,0 +1,20 @@
+.name-cv{
+   
+    text-align: center;
+
+}
+.align-cv{
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.hr-style{
+    color: yellow;
+
+ 
+    margin: 0rem 0;
+   
+    
+    border-top: 3px solid;
+    opacity: 0.8;
+}

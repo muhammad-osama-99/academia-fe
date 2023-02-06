@@ -1,0 +1,45 @@
+.footer-bottom{
+    width: 100vw;
+  bottom: 0;
+position:fixed; 
+height: 50px;
+
+z-index: 100;
+}
+.footer-bottom > p{
+ padding-top: 15px;
+ 
+    word-spacing: 2px;
+    text-transform: capitalize;
+    padding-left: 50px;
+ }
+ .footer-bottom >p> a{
+   color:#44bae8;
+ }
+
+
+
+
+
+
+ .main_header{
+  min-height: 45px !important;
+  background: #673AB7 !important; 
+}
+.pagename_h3{
+  cursor: pointer;
+  padding-left:50px;
+  padding-right:50px;
+  padding-top: 5px;
+}
+.main_header .pagename{
+  letter-spacing: 1px;
+}
+.main_header .pagename:hover{
+  color: rgb(198, 202, 215) !important;
+}
+@media screen and (max-width: 450px) {
+  .pagename_h3{
+      font-size: 22px !important;
+  }
+}

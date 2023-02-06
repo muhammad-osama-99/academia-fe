@@ -1,0 +1,38 @@
+import React from "react";
+import { Form } from "react-bootstrap";
+import "./authForm.css"
+import { Formik,  Field } from "formik";
+import { useField } from "formik";
+const provinces = [
+    "Balochistan","Khyber Pakhtunkhwa","Punjab","Sindh",
+    "Islamabad Capital Territory",
+    "Gilgit-Baltistan", "Azad Jammu and Kashmir"
+
+];
+
+export const ProvinceSelect = ({ label, fieldRequired, ...props }) => {
+    const [field, meta] = useField(props);
+    return (
+        <>
+            <Form.Label htmlFor={props.id || props.name} style={{ fontWeight: "500" }}>
+                {label}
+                <span className="error">{fieldRequired}</span>
+            </Form.Label>
+
+            
+
+            <Form.Control className="w-100 signup-form" as="select" name="province">
+              <option value="">Select Province</option>
+              {provinces.map((province) => (
+                <option key={province} value={province}>
+                  {province}
+                </option>
+              ))}
+            </Form.Control>
+
+            {meta.touched && meta.error ? (
+                <div className=" error">{meta.error}</div>
+            ) : null}
+        </>
+    );
+};
