@@ -1,11 +1,11 @@
 import React from 'react'
-import "./posts.css"
+import "../myPosts/posts.css"
 import "../../../auth/auth.css"
 
 import user from "../../../../src/assets/user.png"
 import { Row, Col } from "react-bootstrap";
 
-const MyPosts = () => {
+const ViewProject = () => {
   return (
     <>
     <div className="search-wrapper">
@@ -65,24 +65,20 @@ const MyPosts = () => {
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               
                 </Col>
-                <Col md={2} className='job-level'>
-                <Row>
-                <button className='label-a'>View</button>
+                <Col md={2} >
                 
-                <button className='label-b'>Edit</button>
-                
-                <button className='label-b'>Applicant</button>
-                </Row>
-               
-    
+                <div className='job-posted flexwrap-flex'>
+                  <Row><p>Collaborated</p></Row>
+                  <Row>Posted 2 mins ago</Row>
+                <Row>Deadline: 1-1-2023</Row>
+
+</div>
+
                 </Col>
             </Row>
             <Row>
-                <Col md={12}>
-                <div className='job-posted'>
-Posted 2 mins ago
-<span> - Deadline: <i>1-1-2023</i></span>
-</div>
+                <Col md={12} className='job-level'>
+                <button className='label-a'>View Details</button>
                 </Col>
             </Row>
        
@@ -92,7 +88,7 @@ Posted 2 mins ago
 
 
 <div className='job-card'>
-            <Row>
+<Row>
                 <Col md={2} >
                 <img className='job-profile' src={user}  alt="dp" />
                 </Col>
@@ -102,24 +98,20 @@ Posted 2 mins ago
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               
                 </Col>
-                <Col md={2} className='job-level'>
-                <Row>
-                <button className='label-a'>View</button>
+                <Col md={2} >
                 
-                <button className='label-b'>Edit</button>
-                
-                <button className='label-b'>Applicant</button>
-                </Row>
-               
-    
+                <div className='job-posted flexwrap-flex'>
+                  <Row><p>Open Collaboration</p></Row>
+                  <Row>Posted 2 mins ago</Row>
+                <Row>Deadline: 1-1-2023</Row>
+
+</div>
+
                 </Col>
             </Row>
             <Row>
-                <Col md={12}>
-                <div className='job-posted'>
-Posted 2 mins ago
-<span> - Deadline: <i>1-1-2023</i></span>
-</div>
+                <Col md={12} className='job-level'>
+                <button className='label-a'>View Details</button>
                 </Col>
             </Row>
        
@@ -127,7 +119,7 @@ Posted 2 mins ago
 
 </div>
 <div className='job-card'>
-            <Row>
+<Row>
                 <Col md={2} >
                 <img className='job-profile' src={user}  alt="dp" />
                 </Col>
@@ -137,27 +129,22 @@ Posted 2 mins ago
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               
                 </Col>
-                <Col md={2} className='job-level'>
-                <Row>
-                <button className='label-a' >View</button>
+                <Col md={2} >
                 
-                <button className='label-b'>Edit</button>
-                
-                <button className='label-b'>Applicant</button>
-                </Row>
-               
-    
+                <div className='job-posted flexwrap-flex'>
+                  <Row><p>Funding</p></Row>
+                  <Row>Posted 2 mins ago</Row>
+                <Row>Deadline: 1-1-2023</Row>
+
+</div>
+
                 </Col>
             </Row>
             <Row>
-                <Col md={12}>
-                <div className='job-posted'>
-Posted 2 mins ago
-<span> - Deadline: <i>1-1-2023</i></span>
-</div>
+                <Col md={12} className='job-level'>
+                <button className='label-a'>View Details</button>
                 </Col>
             </Row>
-       
 
 
 </div>
@@ -171,4 +158,4 @@ Posted 2 mins ago
   )
 }
 
-export default MyPosts
+export default ViewProject

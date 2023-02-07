@@ -1,56 +1,15 @@
 import React from 'react'
-import "./posts.css"
+import "../myPosts/posts.css"
 import "../../../auth/auth.css"
 
 import user from "../../../../src/assets/user.png"
 import { Row, Col } from "react-bootstrap";
 
-const MyPosts = () => {
+const Applied = () => {
   return (
     <>
-    <div className="search-wrapper">
-        <div className='search-box'>
-            <div className='search-card'>
-                <input className='search-input' type="text"
-                placeholder='Job TITLE OR KEYWORDS'/>
-                <button className='search-button'>Search</button>
-            </div>
-        </div>
-      
-    </div>
-    <div className='filter-box'>
-        <div className='filter-dropdown'>
-            <select className='filter-select' id='job-level'
-            name="job-level">
-                <option>Job City</option>
-                <option>Lahore</option>
-                <option>Islamabad</option>
-            </select>
-            <select className='filter-select' id="job-function" name="job-function">
-                <option>Job Function</option>
-                <option>IT</option>
-                <option>Manager</option>
-            </select>
-            <select className='filter-select' id="employment" name="employment">
-                <option>Job Function</option>
-                <option>Part Time</option>
-                <option>Full Time</option>
-            </select>
-
-        </div>
-<div className='filter-chosen'>
-    <div className='chosen-card'>
-        Remote<i className='fas fa-times-circle'></i>
-    </div>
-    <div className='chosen-card'>
-        Full Time<i className='fas fa-times-circle'></i>
-    </div>
-    <div className='chosen-card'>
-        Financial Touch<i className='fas fa-times-circle'></i>
-    </div>
-
-</div>
-    </div>
+    
+    
 
     <section className='job-list' id="jobs">
 
@@ -67,11 +26,8 @@ const MyPosts = () => {
                 </Col>
                 <Col md={2} className='job-level'>
                 <Row>
-                <button className='label-a'>View</button>
-                
-                <button className='label-b'>Edit</button>
-                
-                <button className='label-b'>Applicant</button>
+                <p>Status</p>
+                <p>You are Rejected</p>
                 </Row>
                
     
@@ -104,11 +60,8 @@ Posted 2 mins ago
                 </Col>
                 <Col md={2} className='job-level'>
                 <Row>
-                <button className='label-a'>View</button>
-                
-                <button className='label-b'>Edit</button>
-                
-                <button className='label-b'>Applicant</button>
+                <p>Applied</p>
+                <p>Check Email</p>
                 </Row>
                
     
@@ -139,11 +92,8 @@ Posted 2 mins ago
                 </Col>
                 <Col md={2} className='job-level'>
                 <Row>
-                <button className='label-a' >View</button>
-                
-                <button className='label-b'>Edit</button>
-                
-                <button className='label-b'>Applicant</button>
+                <p>Applied</p>
+                <p>Waiting for Result</p>
                 </Row>
                
     
@@ -171,4 +121,4 @@ Posted 2 mins ago
   )
 }
 
-export default MyPosts
+export default Applied

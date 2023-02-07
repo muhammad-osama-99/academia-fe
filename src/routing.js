@@ -12,13 +12,19 @@ import UserInformation from './auth/userInformation';
 import PageNotFound from './components/common/pageNotFound';
 import NewUser from './dashboard/dashboardPages/adduser';
 import AccessUserList from './dashboard/dashboardPages/adminuseraccess';
+import ApplicantList from './dashboard/dashboardPages/applicantList/applicantList';
+import Applied from './dashboard/dashboardPages/applied/applied';
 import MyPosts from './dashboard/dashboardPages/myPosts/myPosts';
+import DetailView from './dashboard/dashboardPages/opportunitiesDetail/detailView';
 import UserProfile from './dashboard/dashboardPages/profile';
 import ViewOwnProfile from './dashboard/dashboardPages/profileView/viewOwnProfile';
 import ViewUserOwnProfile from './dashboard/dashboardPages/profileView/viewUserOwnProfile';
+import DetailViewProject from './dashboard/dashboardPages/projectDetail/detailView';
 import RecoverPassword from './dashboard/dashboardPages/security';
 import UploadOpportunities from './dashboard/dashboardPages/uploadOpportunities/opportunies';
 import UploadIdeas from './dashboard/dashboardPages/uploadProject.jsx/idea';
+import ViewOpportunity from './dashboard/dashboardPages/viewOpportunity/viewOppor';
+import ViewProject from './dashboard/dashboardPages/viewProjects/viewProjects';
 import Dashboard from './dashboard/index';
 import Index from './layout';
 import ActivationEmail from './pages/ActivateEmail/ActivationEmail';
@@ -52,6 +58,13 @@ const Routing = () => {
           <Route path="opportunities/post" element={< UploadOpportunities/>} />
           <Route path="projectidea/post" element={< UploadIdeas/>} />
           <Route path="myposts" element={< MyPosts/>} />
+          <Route path="applied" element={< Applied/>} />
+          <Route path="opportunities" element={< ViewOpportunity/>} />
+          <Route path="projectidea" element={< ViewProject/>} />
+          <Route path="postapplicant" element={< ApplicantList/>} />
+          <Route path="opportunities/detail" element={< DetailView/>} />
+          <Route path="projectidea/detail" element={< DetailViewProject/>} />
+         
 
           <Route path="user/add" element={<NewUser />} />
           <Route path="profile/view" element={<UserProfile />} />

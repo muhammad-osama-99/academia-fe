@@ -3,41 +3,35 @@ import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 
 import { mockDataContacts } from "../../../data/mockData";
 import Header from "../../../components/dashboardHeader/Header";
-import { Button } from "@material-ui/core";
-import {Link} from 'react-router-dom';
 
-const UserProfile = () => {
+
+const ApplicantList = () => {
   
-  const handleClick = (event, cellValues) => {
-    console.log(cellValues.row);
-  };
+
   const columns = [
     { field: "id", headerName: "ID", flex: 0.5 },
-    { field: "registrarId", headerName: "Registrar ID" },
+    
     {
       field: "name",
       headerName: "Name",
       flex: 1,
       cellClassName: "name-column--cell",
-      renderCell: (params) => (
-        <Link to={`/`}>{params.value}</Link>
-      )
     },
 
-    {
-      field: "phone",
-      headerName: "Phone Number",
-      flex: 1,
-    },
+  
     {
       field: "email",
       headerName: "Email",
       flex: 1,
     },
-    
     {
-      field: "city",
-      headerName: "City",
+        field: "comment",
+        headerName: "Comments",
+        flex: 1,
+      },
+    {
+      field: "status",
+      headerName: "Status",
       flex: 1,
     },
    
@@ -46,8 +40,8 @@ const UserProfile = () => {
   return (
     <Box m="20px">
       <Header
-        title="PROFILES"
-        subtitle="List of Account Profile"
+        title="Applicant"
+        subtitle="List of Applicant Profile"
       />
       <Box
         m="40px 0 0 0"
@@ -91,4 +85,4 @@ const UserProfile = () => {
   );
 };
 
-export default UserProfile;
+export default ApplicantList;

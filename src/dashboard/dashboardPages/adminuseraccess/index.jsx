@@ -1,5 +1,6 @@
 import { Box, Typography} from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
+import {Link} from 'react-router-dom';
 
 
 import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
@@ -30,8 +31,10 @@ const AccessUserList = () => {
       headerName: "Access Level",
       flex: 1,
       renderCell: ({ row: { access } }) => {
+        
         return (
           <Box
+          
             width="60%"
             m="0 auto"
             p="5px"
@@ -46,12 +49,14 @@ const AccessUserList = () => {
             }
             borderRadius="4px"
           >
+            <Link to={`/`}>
             {access === "admin" && <AdminPanelSettingsOutlinedIcon />}
             {access === "manager" && <SecurityOutlinedIcon />}
             {access === "user" && <LockOpenOutlinedIcon />}
-            <Typography color={"grey"} sx={{ ml: "5px" }}>
+            <Typography  color={"grey"} sx={{ ml: "5px" }}>
               {access}
             </Typography>
+            </Link>
           </Box>
         );
       },
